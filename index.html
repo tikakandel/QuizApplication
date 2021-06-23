@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Website</title>
+    <link rel="stylesheet" href="./Assets/CSS/reset.css">
+    <link rel="stylesheet" href="./Assets/CSS/index.css">
+  
+
+</head>
+
+<body>
+    
+    <div class="main-div">
+        <div class="quizdiv">
+            <div id="lableContainer">
+                <label id="viewHighScore" for="score.html" > <a href="score.html"> View HighScore</a></label>
+                <label class = "div-hidden" id="timer" for="Timer">Time:</label>
+            </div>
+
+            <div class="ScoreArea" id="showScore">     
+                <Fieldset>     
+                <h3 id="finalScore">       </h3>
+                <label for="text" id="labelText">Your Initial: </label>
+                <input type="text" id="studentID" name="text" required> 
+               <!-- <button class=" btn reloadPage"> Play Again </button>-->
+                <button class=" btn submitbtn"> Submit </button>
+                <!--<button class="btn" id = "playAgain" onclick="location.reload()"> Play Again </button>-->
+            </Fieldset>   
+
+               <!-- <button class="btn" onclick="location.reload()"> Play Again </button>-->
+            </div>
+            <div id="codingQZ">
+
+                <h2>Coding Quiz chalange</h2>
+                <p>
+                    Try to answer the following code related question with in th time limit.
+                    Keep in mind that incorrect answer will be panialize you score time by seven second.
+                </p>
+
+            </div>
+
+            <div id="quiz"></div>
+            <input type="button" value="Start Quiz" class="statQuizBtn">
+            <div id="results div-hidden"></div>
+
+
+        </div>
+
+
+  
+    
+        <div class="inner-div div-hidden">
+            <h2 class="question">question comes here</h2>
+            <ul>
+                <li>
+                    <input type="radio" name="answer" id="ans1" class="answer">
+                    <label for="ans1" id="option1"> Answer </label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="ans2" class="answer">
+                    <label for="ans1" id="option2"> Answer </label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="ans3" class="answer">
+                    <label for="ans1" id="option3"> Answer </label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="ans4" class="answer">
+                    <label for="ans1" id="option4"> Answer </label>
+                </li>
+                 </ul>
+               
+            <button id="submit">Submit</button>
+                     
+        </div>
+                  
+       
+    </div>
+    <script src="Assets/JS/quiz.js"></script>
+</body>
+
+</html>
